@@ -16,6 +16,7 @@ let hour = document.querySelector('.hour2')
 let selectChange = document.querySelector('.select');
 let body = document.querySelector('body')
 let yoge = document.querySelector('.yoge')
+let map = document.querySelector('.bx-map')
 
 // Variables ended
 
@@ -26,6 +27,12 @@ selectChange.addEventListener('click',()=>{
 })
 
 // DROPDOWN CLICK ENDED
+
+// RESPONSIVE LOCATION CLICK STARTED
+
+
+
+// RESPONSIVE LOCATION CLICK STARTED
 
 
 

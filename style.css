@@ -264,6 +264,12 @@ nav {
     }
 }
 
+.bx-map {
+    color: #fff;
+    font-size: 30px !important;
+    display: none !important;
+}
+
 .loader {
     width: 98px;
     height: 98px;
@@ -289,17 +295,115 @@ nav {
 
 @media only screen and (max-width:720px) {
 
-    .container{
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    header {
+        padding-top: 5px;
+    }
+
+    .container {
         max-width: 720px;
         margin: 0 auto;
+        padding: 10px;
     }
 
     .prayer-time-wrapper {
+        margin-bottom: 50px;
         display: grid;
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
     }
 
     .country {
         display: none;
+    }
+
+    .mintaqa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newyork {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0;
+        gap: 8px;
+    }
+
+    .time {
+        display: flex;
+        align-items: center;
+
+
+        h3 {
+            font-size: 20px;
+            font-weight: 300px;
+        }
+    }
+
+    .year {
+
+        color: #FFC700 !important;
+        font-size: 19px !important;
+        max-width: 400px;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+    }
+
+    .hour2 {
+        max-width: 140px;
+        font-weight: 300;
+    }
+
+    .mintaqa-title {
+        padding-top: 20px;
+    }
+
+    nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    i {
+        font-size: 25px !important;
+    }
+
+    .prayer-time {
+        max-width: 170px !important;
+        max-height: 260px !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px !important;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.20);
+        box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.20);
+
+        img {
+            height: 120px !important;
+        }
+
+        h3 {
+            font-size: 23px !important;
+        }
+
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+
+    .bx-map {
+        display: flex !important;
+        padding-bottom: 10px;
     }
 }
