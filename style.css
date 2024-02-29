@@ -58,6 +58,28 @@ nav {
     }
 }
 
+.newyork {
+    position: relative;
+    left: 130px;
+}
+
+.time {
+    display: flex;
+    gap: 30px;
+}
+
+.year {
+    color: #FFC700 !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.hour2 {
+    width: 140px;
+}
+
 .regionName-wrapper {
     display: flex;
     align-items: center;
@@ -92,13 +114,77 @@ nav {
         line-height: normal;
     }
 
-    i {
-        font-size: 24px;
-        padding: 7px;
-        background: #ffff;
-        border-radius: 50%;
-    }
 }
+
+.justregion {
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.justregion:hover {
+    background: #fff;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block !important;
+}
+
+
+#regionName {
+    z-index: 44;
+    position: absolute;
+    left: 52%;
+    bottom: 44.8%;
+    height: 280px;
+    overflow: auto;
+    background: #fff;
+    width: 200px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 25px 1px rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(4px);
+    color: #13003C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    scrollbar-gutter: match-parent;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+.select {
+    width: 210px;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 4px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.bx-chevron-down {
+    font-size: 24px;
+    padding: 7px;
+    background: #ffff;
+    border-radius: 60%;
+
+}
+
 
 .flex {
     display: flex;
@@ -135,14 +221,15 @@ nav {
 
 .prayer-time-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
-    gap: 40px;
     align-items: center;
 
     .prayer-time {
         cursor: pointer;
         border: 1px solid rgba(0, 0, 0, 0.51);
-        width: 250px !important;
+        width: 230px !important;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -174,5 +261,45 @@ nav {
             font-weight: 700;
             line-height: normal;
         }
+    }
+}
+
+.loader {
+    width: 98px;
+    height: 98px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+    left: 50%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:720px) {
+
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .prayer-time-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .country {
+        display: none;
     }
 }
