@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- GOOGLE FONTS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FAVICON LINK -->
+    <link rel="icon" href="https://berkeleymasjid.org/images/logo.png">
+    <title>Namoz vaqtlari</title>
+</head>
+
+<body class="container">
+    <header>
+        <div class="container">
+            <nav>
+
+                <i class='bx bx-map'></i>
+                <h2 class="namoz">Namoz vaqtlari</h2>
+
+                <div class="country">
+                    <h3>Hududni tanlang:</h3>
+                    <div class="select dropdown">
+                        <h3 class="yoge">Tashkent</h3>
+                        <div>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="regionName" class="none dropdown">
+
+                </div>
+
+                <div class="flex  mintaqa">
+                    <div class="flex mintaqa-title">
+                        <h3>Mintaqa:</h3>
+                        <div class="regionName-wrapper">
+                            <h2 class="regionName">Toshkent</h2>
+                            <h2>shahri</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex newyork">
+                        <div>
+                            <i class='bx bx-calendar'></i>
+                        </div>
+
+                        <div class="time">
+                            <h3 class="year"></h3>
+                            <h3 class="hour2"></h3>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section id="section-1">
+            <div class="container">
+                <div class="prayer-time-wrapper">
+                    <div class="prayer-time">
+                        <h3>Tong</h3>
+                        <img src="./assets/images/svg/isha-prayer 1.svg" alt="bomdod">
+                        <h2 class="tong">04:58</h2>
+                    </div>
+
+                    <div class="prayer-time">
+                        <h3>Quyosh</h3>
+                        <img src="./assets/images/svg/sunrise 1.svg" alt="bomdod">
+                        <h2 class="quyosh">06:05</h2>
+                    </div>
+
+                    <div class="prayer-time">
+                        <h3>Peshin</h3>
+                        <img src="./assets/images/svg/sun 1.svg" alt="bomdod">
+                        <h2 class="peshin">12:38</h2>
+                    </div>
+
+                    <div class="prayer-time">
+                        <h3>Asr</h3>
+                        <img src="./assets/images/svg/sunrise (1) 1.svg" alt="bomdod">
+                        <h2 class="asr">16:58</h2>
+                    </div>
+
+                    <div class="prayer-time">
+                        <h3>Shom</h3>
+                        <img src="./assets/images/svg/sunrise (1) 2.svg" alt="bomdod">
+                        <h2 class="shom">17:48</h2>
+                    </div>
+
+                    <div class="prayer-time">
+                        <h3>Xufton</h3>
+                        <img src="./assets/images/svg/moon 1.svg" alt="bomdod">
+                        <h2 class="xufton">19:46</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<!-- Region data js -->
+<script src="./region.js"></script>
+<!-- Javascript code -->
+<script src="./index.js"></script>
+
+</html>
