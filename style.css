@@ -222,7 +222,7 @@ nav {
 .prayer-time-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding-bottom:200px;
